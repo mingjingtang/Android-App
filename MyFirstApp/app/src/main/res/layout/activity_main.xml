@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width ="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:inputType="textCapWords" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings"
+        android:textAllCaps="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wipped cream"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"
+        android:id="@+id/check_wippedCream"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chocolate"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"
+        android:id="@+id/check_Chocolate"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -49,7 +85,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="price"
+        android:text="order summery"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="16dp"
         android:textAllCaps="true"/>
@@ -57,11 +93,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$0"
         android:layout_marginLeft="16dp"
-        android:layout_marginBottom="16dp"
-        android:id="@+id/price_text_view"
-        android:textColor="@android:color/black"/>
+        android:layout_marginTop="16dp"
+        android:textColor="#40e0d0"
+        android:id = "@+id/order_summary_text_view"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -70,12 +105,6 @@
         android:text="order"
         android:onClick="submitOrder" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:textColor="#40e0d0"
-        android:id = "@+id/priceSummery_text_view"/>
 
 </LinearLayout>
+</ScrollView>
