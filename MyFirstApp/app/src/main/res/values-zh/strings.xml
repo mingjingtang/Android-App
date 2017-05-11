@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">咖啡点餐</string>
+    <string name="thank_you">谢谢</string>
+    <string name="toppings">小料</string>
+</resources>

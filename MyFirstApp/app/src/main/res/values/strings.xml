@@ -1,3 +1,7 @@
-<resources>
-    <string name="app_name">MyFirstApp</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name = "app_name">Serve Coffee</string>
+    <string name = "hello_word">Hello word!</string>
+    <string name = "toppings">Toppings</string>
+    <string name = "thank_you">Thank you!</string>
 </resources>
