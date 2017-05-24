@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
         boolean haveChocolate = cb2.isChecked();
         String finalPrint = createOrderSummary(haveCream,haveChocolate,quantity);
 
-//        Intent intent = new Intent(Intent.ACTION_SENDTO);
-//        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-//        intent.putExtra(Intent.EXTRA_SUBJECT, "Just Java order for "+ userName());
-//        intent.putExtra(Intent.EXTRA_TEXT, finalPrint);
-//        if (intent.resolveActivity(getPackageManager()) != null) {
-//            startActivity(intent);
-//        }
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Just Java order for "+ userName());
+        intent.putExtra(Intent.EXTRA_TEXT, finalPrint);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
 
         displayMessage(createOrderSummary(haveCream,haveChocolate,quantity));
 

@@ -18,12 +18,8 @@
         android:inputType="textCapWords" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/toppings"
-        android:textAllCaps="true"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="16dp" />
+        style = "@style/HeaderTextStyle"
+        android:text="@string/toppings"/>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -44,13 +40,8 @@
         android:id="@+id/check_Chocolate"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="quantity"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginLeft="16dp"
-        android:textAllCaps="true" />
+        style = "@style/HeaderTextStyle"
+        android:text="quantity" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -95,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:textColor="#40e0d0"
+        android:textColor="#3E2723"
         android:id = "@+id/order_summary_text_view"/>
 
     <Button
